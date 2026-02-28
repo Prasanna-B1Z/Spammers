@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scammers - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- tsParticles CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.9.1/tsparticles.bundle.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            color: #e0e0e0;
+            background: #0d1117;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #tsparticles {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 3.6rem;
+            color: #ffffff;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        .tagline {
+            font-size: 1.35rem;
+            color: #a0a0c0;
+            font-weight: 300;
+        }
+
+        .team-info {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 1.1rem;
+            color: #9090b0;
+            line-height: 1.6;
+        }
+
+        .members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
+            margin-bottom: 70px;
+        }
+
+        .card {
+            background: rgba(20, 25, 40, 0.65);
+            border: 1px solid rgba(100, 120, 180, 0.15);
+            border-radius: 16px;
+            padding: 36px 28px;
+            backdrop-filter: blur(10px);
+            transition: all 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(140, 160, 220, 0.35);
+            background: rgba(25, 30, 50, 0.75);
+        }
+
+        .card h2 {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.85rem;
+            color: #e8e8ff;
+            margin-bottom: 14px;
+        }
+
+        .role {
+            color: #b0c0ff;
+            font-weight: 500;
+            margin-bottom: 16px;
+            display: block;
+            font-size: 1.05rem;
+        }
+
+        .skills span {
+            background: rgba(60, 80, 140, 0.25);
+            color: #d0d8ff;
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin: 6px 8px 6px 0;
+            display: inline-block;
+            font-size: 0.92rem;
+            border: 1px solid rgba(100, 120, 180, 0.2);
+        }
+
+        .goal {
+            color: #c8d0e8;
+            line-height: 1.55;
+            font-size: 0.98rem;
+            margin-top: 24px;
+            border-left: 3px solid #6b8cff;
+            padding-left: 18px;
+            font-style: italic;
+        }
+
+        .vision {
+            background: rgba(20, 25, 40, 0.6);
+            border: 1px solid rgba(100, 120, 180, 0.18);
+            border-radius: 16px;
+            padding: 36px;
+            margin-bottom: 60px;
+            backdrop-filter: blur(8px);
+        }
+
+        .vision h3 {
+            color: #e0e0ff;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .vision p {
+            color: #b8c0e0;
+            line-height: 1.65;
+            margin-bottom: 1.2em;
+        }
+
+        .contact {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .contact h3 {
+            color: #e0e0ff;
+            margin-bottom: 16px;
+        }
+
+        .contact a {
+            color: #8ca0ff;
+            font-size: 1.2rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #c0d0ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0 60px;
+            color: #707090;
+            font-size: 1rem;
+            border-top: 1px solid rgba(80, 100, 160, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .members {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Gentle moving particles background -->
+    <div id="tsparticles"></div>
+
+    <div class="container">
+        <header>
+            <h1>Scammers</h1>
+            <div class="tagline">Building smarter tomorrows with AI, code, and unstoppable teamwork</div>
+        </header>
+
+        <div class="team-info">
+            SRM Madurai College for Engineering and Technology (SRM MCET)<br>
+            B.E. Computer Science and Engineering (Artificial Intelligence and Machine Learning)
+        </div>
+
+        <section class="members">
+            <div class="card">
+                <h2>Prasanna K</h2>
+                <span class="role">Frontend • Team Lead</span>
+                <div class="skills">
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                    <span>Team Coordination</span>
+                </div>
+                <div class="goal">
+                    “I want to master full-stack development and lead innovative AI-powered web applications that solve
+                    real problems.”
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Ratnakar K S</h2>
+                <span class="role">Backend • AI</span>
+                <div class="skills">
+                    <span>Python</span>
+                    <span>Data Structures</span>
+                    <span>AI & Machine Learning</span>
+                </div>
+                <div class="goal">
+                    “I am passionate about developing powerful AI models and robust backends to create impactful,
+                    real-world applications.”
+                </div>
+            </div>
+        </section>
+
+        <section class="vision">
+            <h3>Team Vision</h3>
+            <p><strong>What we want to solve:</strong> We aim to create powerful AI modules and intelligent applications
+                that make technology more accessible, efficient, and useful in everyday life — from smart tools for
+                students to practical AI solutions for local challenges.</p>
+            <br>
+            <p><strong>Why we formed the team:</strong> We came together because of our shared love for teamwork,
+                innovation, and pushing boundaries in AI and web development. Combining frontend creativity with
+                backend/AI strength lets us build complete, high-quality projects faster and better.</p>
+        </section>
+
+        <section class="contact">
+            <h3>Contact Us</h3>
+            <p><a href="mailto:1purple.creature@gmail.com">1purple.creature@gmail.com</a></p>
+        </section>
+
+        <footer>
+            Built by Scammers • 2026
+        </footer>
+    </div>
+
+    <script>
+        tsParticles.load("tsparticles", {
+            fpsLimit: 90,
+            particles: {
+                number: { value: 70, density: { enable: true, area: 900 } },
+                color: { value: ["#c0c8ff", "#a0b0e0", "#e0e0ff", "#ffffff"] },
+                shape: { type: "circle" },
+                opacity: { value: { min: 0.15, max: 0.55 }, random: true, animation: { enable: true, speed: 0.8 } },
+                size: { value: { min: 1.2, max: 3.8 }, random: true },
+                links: {
+                    enable: true,
+                    distance: 180,
+                    color: "#8090c0",
+                    opacity: 0.18,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 0.9,
+                    direction: "none",
+                    random: true,
+                    straight: false,
+                    outModes: "out",
+                    attract: { enable: false }
+                }
+            },
+            interactivity: {
+                events: {
+                    onHover: { enable: true, mode: "grab" },
+                    onClick: { enable: false },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 220, links: { opacity: 0.35 } }
+                }
+            },
+            detectRetina: true
+        });
+    </script>
+
+</body>
+
+</html>
